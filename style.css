@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    /* position: fixed;
+    top: 100%; */
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+body {
+    --cyan-primary: hsl(179, 62%, 43%);
+    --bright-yellow-primary: hsl(71, 73%, 54%);
+    --light-gray-neutral: hsl(204, 43%, 93%);
+    --grayish-blue-neutral: hsl(218, 22%, 67%);
+    font-family: 'Karla', sans-serif;
+    background-color: var(--light-gray-neutral);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    transform: scale(.85);
+    height: 100%;
+}
+
+.row {
+    max-width: 700px;
+    max-height: 500px;
+    margin: auto;
+}
+
+.top {
+    background-color: white;
+    border-radius: 5px 5px 0 0;
+    padding: 18px;
+    line-height: 30px;
+}
+
+.top h1 {
+    color: var(--cyan-primary);
+    font-weight: 700;
+    font-size: 22px;
+    margin: 12px 0 28px 0;
+}
+
+.top h2 {
+    color: var(--bright-yellow-primary);
+    font-weight: 700;
+    font-size: 17px;
+    margin-bottom: 24px;
+}
+
+.top p {
+    color: var(--grayish-blue-neutral);
+    font-size: 16px;
+}
+
+.med {
+    padding: 18px;
+    background-color: var(--cyan-primary);
+    color: white;
+}
+
+.med h1,
+.down h1 {
+    font-weight: 700;
+    font-size: 22px;
+    margin: 8px 0 18px 0;
+}
+
+.med .price {
+    font-size: 34px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.med .price span {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--light-gray-neutral);
+    opacity: .7;
+}
+
+.med .p {
+    margin-top: 0;
+    padding-bottom: 20px;
+    color: var(--light-gray-neutral);
+}
+
+.med button {
+    width: 100%;
+    background-color: var(--bright-yellow-primary);
+    color: white;
+    padding: 15px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, .2);
+}
+
+.down {
+    background-color: hsl(179, 48%, 54%);
+    color: white;
+    padding: 18px;
+}
+
+.down p {
+    color: var(--light-gray-neutral);
+    font-weight: 400;
+}
+
+@media (min-width: 780px) {
+    .container {
+        margin-top: 6%;
+    }
+}
